@@ -26,12 +26,14 @@ namespace Tyuiu.TomilovAD.Sprint5.Task0.V8
 
             string res = ds.SaveToFileTextData(x);
 
-            string filePath = Path.Combine(Path.GetTempPath(), "OutputFileTask0.txt");
+            string filePath = Path.Combine("OutputFileTask0.txt");
 
             Console.WriteLine("Файл " + res);
             Console.WriteLine("Создан");
 
-            Console.WriteLine(filePath);
+            File.ReadAllText(filePath);
+
+            Console.WriteLine(File.ReadAllText(filePath));
             Console.ReadKey();
 
         }
