@@ -29,6 +29,8 @@ namespace Tyuiu.TomilovAD.Sprint5.Task0.V8
             Console.WriteLine("Файл " + res);
             Console.WriteLine("Создан");
             Console.ReadKey();
+
+            Path.GetTempFileName();
         }
     }
 }
