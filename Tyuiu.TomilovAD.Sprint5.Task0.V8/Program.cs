@@ -31,9 +31,6 @@ namespace Tyuiu.TomilovAD.Sprint5.Task0.V8
             Console.WriteLine("Файл " + res);
             Console.WriteLine("Создан");
 
-            File.ReadAllText(filePath);
-
-            Console.WriteLine(File.ReadAllText(filePath));
             Console.ReadKey();
 
         }

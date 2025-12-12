@@ -9,7 +9,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task0.V8.Lib
         {
             x = 3;
 
-            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
 
             double z = ((Math.Pow((double) x, 3) - 1) / (4 * Math.Pow((double) x, 2)));
 
