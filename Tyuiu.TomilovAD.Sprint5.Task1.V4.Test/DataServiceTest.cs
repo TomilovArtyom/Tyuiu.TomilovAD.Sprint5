@@ -1,7 +1,7 @@
-﻿using Tyuiu.TomilovAD.Sprint5.Task0.V8.Lib;
-using System.IO;
+﻿using System.IO;
+using Tyuiu.TomilovAD.Sprint5.Task1.V4.Lib;
 
-namespace Tyuiu.TomilovAD.Sprint5.Task0.V8.Test
+namespace Tyuiu.TomilovAD.Sprint5.Task1.V4.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -9,7 +9,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task0.V8.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask1.txt");
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
