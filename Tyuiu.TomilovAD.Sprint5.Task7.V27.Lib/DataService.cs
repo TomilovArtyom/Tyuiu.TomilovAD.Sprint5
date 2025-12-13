@@ -8,7 +8,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task7.V27.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSaveFile = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V27.txt");
+            string pathSaveFile = "/app/data/AssesmentData/C#/Sprint5Task7/InPutDataFileTask7V27.txt";
             FileInfo fileInfo = new FileInfo(pathSaveFile);
             bool fileExists = fileInfo.Exists;
 
