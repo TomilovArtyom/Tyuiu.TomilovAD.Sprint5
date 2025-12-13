@@ -21,9 +21,10 @@ namespace Tyuiu.TomilovAD.Sprint5.Task5.V13.Lib
                     {
                         if (double.TryParse(numberstr, out double num))
                         {
-                            i++;
+
                             if (Math.Abs(num) >= -1.5 && Math.Abs(num) <= 1.5)
                             {
+                                i++;
                                 res = res + num;
                             }
                         }
