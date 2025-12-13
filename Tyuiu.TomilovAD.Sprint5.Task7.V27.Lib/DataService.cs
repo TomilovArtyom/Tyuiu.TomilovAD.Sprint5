@@ -8,9 +8,14 @@ namespace Tyuiu.TomilovAD.Sprint5.Task7.V27.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSaveFile = "/app/data/AssesmentData/C#/Sprint5Task7/InPutDataFileTask7V27.txt";
+            string pathSaveFile = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V27NEW.txt");
             FileInfo fileInfo = new FileInfo(pathSaveFile);
             bool fileExists = fileInfo.Exists;
+
+            if (fileExists)
+            {
+                File.Delete(pathSaveFile);
+            }
 
             string strLine = "";
             using (StreamReader reader = new StreamReader(path))
