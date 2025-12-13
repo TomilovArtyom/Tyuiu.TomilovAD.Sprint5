@@ -25,7 +25,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task7.V27.Lib
                 {
                     for (int i = 0; i < line.Length; i++)
                     {
-                        strLine = Regex.Replace(line, @"\s+", " ");
+                        strLine = Regex.Replace(line, @"\s+", "");
                     }
 
                     File.AppendAllText(pathSaveFile, strLine);
