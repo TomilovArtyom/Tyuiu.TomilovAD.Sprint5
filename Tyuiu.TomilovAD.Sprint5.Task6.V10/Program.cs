@@ -7,7 +7,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task6.V10
     {
         static void Main(string[] args)
         {
-            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask5V13.txt");
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask6V10.txt");
 
             DataService ds = new DataService();
 

@@ -14,8 +14,8 @@ namespace Tyuiu.TomilovAD.Sprint5.Task6.V10.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    char[] separators = {',', '.'};
-                    string[] words = line.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                    char[] del = {',', '.', ' '};
+                    string[] words = line.Split(del, StringSplitOptions.RemoveEmptyEntries);
                     foreach (string word in words)
                     {
                         if (word.Length > 4)
