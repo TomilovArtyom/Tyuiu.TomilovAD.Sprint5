@@ -7,7 +7,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task4.V6
     {
         static void Main(string[] args)
         {
-            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V6.txt");
+            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask4V6.txt";
 
             DataService ds = new DataService();
 
