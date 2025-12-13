@@ -1,21 +1,21 @@
-﻿using Tyuiu.TomilovAD.Sprint5.Task4.V6.Lib;
-using System.IO;
+﻿using System.IO;
+using Tyuiu.TomilovAD.Sprint5.Task5.V13.Lib;
 
-namespace Tyuiu.TomilovAD.Sprint5.Task4.V6
+namespace Tyuiu.TomilovAD.Sprint5.Task5.V13
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V6.txt");
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask5V13.txt");
 
             DataService ds = new DataService();
 
             Console.Title = "Спринт #5 | Выполнил Томилов А. Д. | ИСТНб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Задание #4                                                              *");
-            Console.WriteLine("* Вариант #6                                                              *");
+            Console.WriteLine("* Задание #5                                                              *");
+            Console.WriteLine("* Вариант #13                                                             *");
             Console.WriteLine("* Выполнил: Томилов А. Д. | ИСТНб-25-1                                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                         *");
