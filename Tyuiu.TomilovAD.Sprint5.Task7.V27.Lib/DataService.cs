@@ -8,17 +8,31 @@ namespace Tyuiu.TomilovAD.Sprint5.Task7.V27.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathsavefile = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V27.txt");
-            FileInfo fileinfo = new FileInfo(pathsavefile);
-            bool fileExists = fileinfo.Exists;
+            string pathSaveFile = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V27NEW.txt");
+            FileInfo fileInfo = new FileInfo(pathSaveFile);
+            bool fileExists = fileInfo.Exists;
 
             if (fileExists)
             {
-                File.Delete(pathsavefile);
+                File.Delete(pathSaveFile);
             }
 
             string strLine = "";
-            using ()
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    for (int i = 0; i < line.Length; i++)
+                    {
+                        strLine = Regex.Replace(line, @"\s+", " ");
+                    }
+
+                    File.AppendAllText(pathSaveFile, strLine);
+                }
+            }
+
+            return pathSaveFile;
         }
     }
 }

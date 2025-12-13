@@ -7,7 +7,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task7.V27
     {
         static void Main(string[] args)
         {
-            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask6V10.txt");
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V27.txt");
 
             DataService ds = new DataService();
 
@@ -25,7 +25,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task7.V27
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double res = ds.LoadDataAndSave(path);
+            string res = ds.LoadDataAndSave(path);
 
             Console.WriteLine(res);
 
