@@ -14,7 +14,7 @@ namespace Tyuiu.TomilovAD.Sprint5.Task6.V10.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    char[] del = {',', '.', ' '};
+                    char[] del = {',', '.'};
                     string[] words = line.Split(del, StringSplitOptions.RemoveEmptyEntries);
                     foreach (string word in words)
                     {
